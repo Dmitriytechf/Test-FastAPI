@@ -17,3 +17,5 @@ __pycache__/
 # Игнорировать логи и кэш
 *.log
 *.cache
+*.db
+books.db

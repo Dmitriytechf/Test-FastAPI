@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from .database import init_db, close_db
 from .routers import books, users, other, git_users
 
+
 app = FastAPI(
     title="My API",
     description="Test FastAPI",
