@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException
 from typing import List
-from ..database import database
-from ..models.books import books_table, Book, NewBook
+from te_fast.database import database
+from te_fast.models.books import books_table, Book, NewBook
 
 
 router = APIRouter(prefix="/books", tags=["Книги"])

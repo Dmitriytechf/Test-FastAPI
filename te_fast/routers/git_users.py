@@ -1,5 +1,5 @@
 from fastapi import APIRouter, HTTPException
-from ..models.users import ProfileGit, GitUsersList
+from te_fast.models.users import ProfileGit, GitUsersList
 
 
 router = APIRouter(prefix="/git_users", tags=["Git Пользователи"])

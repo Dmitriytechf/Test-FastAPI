@@ -19,3 +19,5 @@ __pycache__/
 *.cache
 *.db
 books.db
+test.txt
+structure.txt

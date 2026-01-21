@@ -1,5 +1,5 @@
 from fastapi import APIRouter, HTTPException
-from ..models.users import UserModel, UsersList, UserResponse, remove_none_fields
+from te_fast.models.users import UserModel, UsersList, UserResponse, remove_none_fields
 
 
 router = APIRouter(prefix="/users", tags=["Пользователи"])
