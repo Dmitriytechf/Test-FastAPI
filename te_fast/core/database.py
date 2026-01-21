@@ -9,6 +9,7 @@ metadata = MetaData()
 # Синхронный движок только для создания таблиц
 engine = create_engine(
     settings.database_url,
+    echo=True,
     connect_args={"check_same_thread": False}
 )
 
@@ -28,13 +29,13 @@ async def init_db():
         from te_fast.models.books import books_table
         await database.execute(
             books_table.insert().values([
-                {"title": "Книга 1", "author": "Автор 1"},
-                {"title": "Книга 2", "author": "Автор 2"},
+                {"title": "Хоббит, или Туда и обратно", "author": "Джон Р. Р. Толкин"},
+                {"title": "Казаки", "author": "Лев Николаевич Толстой"},
             ])
         )
     except Exception:
         pass  # Данные уже есть или ошибка
-    
+
     print("Database ready ✅")
 
 
