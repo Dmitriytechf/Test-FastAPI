@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, Table, Text
+from sqlalchemy import Column, Integer, String, Table, Text, MetaData
 from pydantic import BaseModel, Field, ConfigDict
 from typing import Optional
 from te_fast.core.database import metadata
