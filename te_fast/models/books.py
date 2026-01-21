@@ -1,7 +1,7 @@
 from sqlalchemy import Column, Integer, String, Table, Text
 from pydantic import BaseModel, Field, ConfigDict
 from typing import Optional
-from te_fast.database import metadata
+from te_fast.core.database import metadata
 
 
 # Определяем таблицу книг

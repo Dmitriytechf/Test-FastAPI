@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException
 from typing import List
-from te_fast.database import database
+from te_fast.core.database import database
 from te_fast.models.books import books_table, Book, NewBook
 
 
